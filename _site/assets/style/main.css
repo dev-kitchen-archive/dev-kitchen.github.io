@@ -1,0 +1,143 @@
+@import url('normalize.css');
+@import url('skeleton.css');
+
+/*fonts*/
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2'), url(http://fonts.gstatic.com/s/raleway/v9/IczWvq5y_Cwwv_rBjOtT0w.woff) format('woff');
+}
+
+/*headings*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: monospace;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #dedede;
+  letter-spacing: 1.0px;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  margin: 0;
+  color: #777;
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+p , label {
+  font-size: 1em;
+}
+
+header .background, section.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1, header h2 {
+  font-size: 4em;
+  text-transform: none;
+  text-align: center;
+  color: #333;
+}
+footer h1, footer h2 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+/*content*/
+section.welcome {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(47,48,51,0.7);
+
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  line-height: 22px;
+  color: #fff;
+}
+section.welcome .container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  min-height: 400px;
+}
+footer {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 50px;
+  background-color: rgba(47,48,51,0.7);
+}
+ul {
+  list-style-type: none;
+  color: #9c9b9b;
+}
+li {
+  margin: 0;
+}
+a {
+  color: #dedede;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+a:hover {
+  color: #fff;
+}
+/*mobile fisrt layout from here*/
+header .background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  height:100vh;
+  width: 100%;
+  background-position: center 50%;
+  background-size: cover;
+  background-image: url('../img/overlay.svg');
+}
+.space {
+  height:100vh;
+}
+
+/*form stuff*/
+input[type=text], input[type=email], textarea {
+  width: 80%;
+  border-radius: 0;
+  opacity: 0.7;
+  color: #333;
+}
+button {
+  border-radius: 0;
+  background-color: #fefefe;
+}
+
+.contact-success, .contact-error {
+  display: none;
+}
+/*.error-name, .error-email, .error-message {
+  color: #b30000;
+  margin-bottom: 0;
+  display: none;
+}
+.error-button {
+  margin-top: 10px;
+  display: none;
+}*/
+
+/*bigger than iPhone 6*/
+@media only screen and (min-width: 670px){
+  .welcome {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}

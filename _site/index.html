@@ -1,24 +1,61 @@
 <!DOCTYPE html>
-<html lang="de">
-<head prefix="og: http://ogp.me/ns#">
-  <title>hakuna - Zeiterfassung für Schweizer Unternehmen</title>
-  <meta charset="utf-8" />
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="Five friends, gathering to creat new & innovative applications." />
+  <meta name="keywords" content="Andreas Plüss, Raffael Schmid, Stefan Pfister, Christian Nötzli, Samuel Kupferschmid, dev kitchen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    section {
-      margin: 5em auto;
-      max-width: 10em;
-      text-align: center;
-      font-family: monospace;
-      font-size: 3em;
-    }
-  </style>
+  <title>dev.kitchen | Developing passionatly for good reasons</title>
+  <link rel="alternate" href="http://www.dev.kitchen/" hreflang="en-US" />
+  <link rel="stylesheet" href="assets/style/main.css" type="text/css" media="screen, print" />
+  <script src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </head>
 <body>
+  <header>
+    <div class="background">
+      <div class="intro">
+        <h1>devkitchen</h1>
+      </div>
+    </div>
+    <div class="space"></div>
+  </header>
 
-  <section>
-    devkitchen
+  <section class="welcome">
+    <div class="container">
+      <div class="six columns">
+        <h2>About us</h2>
+        <p>Five friends, gathering to creat new innovative applications.<br>Stay tuned for further information. Meanwhile feel free to contact us.</p>
+        <br>
+        <h2>Contributors</h2>
+          <ul>
+            <li><a class="footer_link" href="https://github.com/SamuelKupferschmid/">Samuel Kupferschmid</a></li>
+            <li><a class="footer_link" href="https://github.com/cnworks/">Christian Nötzli</a></li>
+            <li><a class="footer_link" href="http://www.qlu.ch/">Andreas Plüss</a></li>
+            <li><a class="footer_link" href="https://github.com/pfischtr/">Stefan Pfister</a></li>
+            <li><a class="footer_link" href="https://www.yux.ch/">Raffael Schmid</a></li>
+          </ul>
+      </div>
+
+      <div class="six columns">
+        <h2>Contact</h2>
+        <form action="//formspree.io/hello@dev.kitchen" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" required>
+            <label for="message">Message</label>
+            <textarea required="required" id="message" class="input" name="message" rows="7" cols="30" required></textarea>
+            <input type="submit" id="submit-button" value="Send">
+        </form>
+        <div class="contact-success">
+          <h3>Thanks for contacting!</h3>
+          <p>We are keen on answering as fast as possible.</p>
+        </div>
+      </div>
+    </div>
   </section>
-
 </body>
 </html>
