@@ -33,7 +33,7 @@ $(function() {
   *form confirmation*
   ******************/
   $('#submit-button').on('click', function(e){
-    var name = 
+    var name = $('#name').val()
     var email = $('#email').val()
     var message = $('#message').val()
 
