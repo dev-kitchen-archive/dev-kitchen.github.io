@@ -43,4 +43,30 @@ $(function() {
       });
     }
   });
+
+  /*color depending on day hour*/
+  var d = new Date();
+  var n = d.getHours();
+  var p = window.location.search.replace("?", ""); //<- for debugging
+  console.log(p)
+  if ((n >= 5 && n < 7) || (p == 1)) {
+    $('body').addClass('early-morning time');
+  } else if ((n >= 7 && n < 9) || (p == 2)) {
+    $('body').addClass('morning time');
+  } else if ((n >= 9 && n < 11) || (p == 3)) {
+    $('body').addClass('early-noon time');
+  } else if ((n >= 11 && n < 14) || (p == 4)) {
+    $('body').addClass('noon time');
+  } else if ((n >= 14 && n < 16) || (p == 5)) {
+    $('body').addClass('afternoon time');
+  } else if ((n >= 16 && n < 18) || (p == 6)) {
+    $('body').addClass('early-evening time');
+  } else if ((n >= 18 && n < 20) || (p == 7)) {
+    $('body').addClass('evening time');
+  } else if ((n >= 20 || n < 5) || (p == 8)) {
+    $('body').addClass('night time');
+  }
+  setTimeout(function(){
+    $('.fade-out').fadeOut('slow');
+  }, 1500);
 })

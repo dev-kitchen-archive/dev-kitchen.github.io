@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #dedede;
   letter-spacing: 1.0px;
+  transition: all 0.8s ease;
 }
 h1 {
   font-size: 2em;
@@ -41,10 +42,11 @@ header .background, section.welcome {
   justify-content: center;
 }
 header h1, header h2 {
-  font-size: 4em;
+  font-size: 4.5em;
+  color: #fff;
+
   text-transform: none;
   text-align: center;
-  color: #333;
 }
 footer h1, footer h2 {
   color: #fff;
@@ -88,6 +90,7 @@ a {
   text-decoration: none;
   font-size: 1em;
   letter-spacing: 1px;
+  transition: all 0.2s ease;
 }
 a:hover {
   color: #fff;
@@ -104,7 +107,18 @@ header .background {
   background-position: center 50%;
   background-size: cover;
   background-image: url('../img/overlay.svg');
+  background-image: url('../img/overlay.svg'), linear-gradient(45deg, rgba(0,0,0,0) 0%, rgba(255,255,255,0) 100%), linear-gradient(45deg, #555 0%, #fff 100%);
 }
+header .background .fade-out {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
 .space {
   height:100vh;
 }
@@ -141,3 +155,33 @@ button {
     padding-bottom: 90px;
   }
 }
+
+/*title colors*/
+body.time header h1 { font-size: 4em; text-shadow: 1px 1px 2px rgba(20,20,20,0.3); }
+body.early-morning h1, body.early-morning h2 { color: #E74C3C; transition: all 2s ease;}
+body.morning h1, body.morning h2 { color: #F2B749; transition: all 2s ease;}
+body.early-noon h1, body.early-noon h2 { color: #FFFC18; transition: all 2s ease;}
+body.noon h1, body.noon h2 { color: #ABFF3B; transition: all 2s ease;}
+body.afternoon h1, body.afternoon h2 { color: #6EFF97; transition: all 2s ease;}
+body.early-evening h1, body.early-evening h2 { color: #71EFFF; transition: all 2s ease;}
+body.evening h1, body.evening h2 { color: #1E6BFF; transition: all 2s ease;}
+body.night h1, body.night h2 { color: #843AFF; transition: all 2s ease;}
+
+
+/*background colors*/
+body.early-morning header .background { background-image: url('../img/overlay.svg'), linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 80%), linear-gradient(0deg, #BC4C3C 0%, #BC4C3C 100%); }
+body.early-morning section.welcome { background-color: rgba(47, 48, 51, 0.8); }
+body.morning header .background { background-image: url('../img/overlay.svg'), linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 80%), linear-gradient(0deg, #F2B749 0%, #E74C3C 100%); }
+body.morning section.welcome { }
+body.early-noon header .background { background-image: url('../img/overlay.svg'), linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 80%), linear-gradient(0deg, #FFFC18 0%, #F2B749 100%); }
+body.early-noon section.welcome { }
+body.noon header .background { background-image: url('../img/overlay.svg'), linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 80%), linear-gradient(0deg, #ABFF3B 0%, #FFFC18 100%); }
+body.noon section.welcome { }
+body.afternoon header .background { background-image: url('../img/overlay.svg'), linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 80%), linear-gradient(0deg, #6EFF97 0%, #ABFF3B 100%); }
+body.afternoon section.welcome { }
+body.early-evening header .background { background-image: url('../img/overlay.svg'), linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 80%), linear-gradient(0deg, #71EFFF 0%, #6EFF97 100%); }
+body.early-evening section.welcome { }
+body.evening header .background { background-image: url('../img/overlay.svg'), linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 80%), linear-gradient(0deg, #1E6BFF 0%, #71EFFF 100%); }
+body.evening section.welcome { background-color: rgba(47, 48, 51, 0.8); }
+body.night header .background { background-image: url('../img/overlay.svg'), linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 80%), linear-gradient(0deg, #843AFF 0%, #1E6BFF 100%); }
+body.night section.welcome { background-color: rgba(47, 48, 51, 0.8); }
