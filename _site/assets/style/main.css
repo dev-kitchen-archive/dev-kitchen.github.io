@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #dedede;
   letter-spacing: 1.0px;
-  transition: all 0.8s ease;
+  transition: all 0.8s ease-in;
 }
 h1 {
   font-size: 2em;
@@ -42,7 +42,7 @@ header .background, section.welcome {
   justify-content: center;
 }
 header h1, header h2 {
-  font-size: 4.5em;
+  font-size: 5em;
   color: #fff;
 
   text-transform: none;
@@ -157,15 +157,15 @@ button {
 }
 
 /*title colors*/
-body.time header h1 { font-size: 4em; text-shadow: 1px 1px 2px rgba(20,20,20,0.3); }
-body.early-morning h1, body.early-morning h2 { color: #E74C3C; transition: all 2s ease;}
-body.morning h1, body.morning h2 { color: #F2B749; transition: all 2s ease;}
-body.early-noon h1, body.early-noon h2 { color: #FFFC18; transition: all 2s ease;}
-body.noon h1, body.noon h2 { color: #ABFF3B; transition: all 2s ease;}
-body.afternoon h1, body.afternoon h2 { color: #6EFF97; transition: all 2s ease;}
-body.early-evening h1, body.early-evening h2 { color: #71EFFF; transition: all 2s ease;}
-body.evening h1, body.evening h2 { color: #1E6BFF; transition: all 2s ease;}
-body.night h1, body.night h2 { color: #843AFF; transition: all 2s ease;}
+body.time header h1 { font-size: 4em; text-shadow: 1px 1px 2px rgba(20,20,20,0.3); transition: all 1.2s; }
+body.early-morning h1, body.early-morning h2 { color: #E74C3C; }
+body.morning h1, body.morning h2 { color: #F2B749; }
+body.early-noon h1, body.early-noon h2 { color: #FFFC18; }
+body.noon h1, body.noon h2 { color: #ABFF3B; }
+body.afternoon h1, body.afternoon h2 { color: #6EFF97; }
+body.early-evening h1, body.early-evening h2 { color: #71EFFF; }
+body.evening h1, body.evening h2 { color: #1E6BFF; }
+body.night h1, body.night h2 { color: #843AFF; }
 
 
 /*background colors*/
